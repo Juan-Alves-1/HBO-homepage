@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+ 
+    body {
+        font-family: 'Inter';
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+
+         /* Adjust opacity */
+        background: url(https://homensquesecuidam.com/wp-content/uploads/2023/02/background.png);
+        background-position-x: center;
+    }
+
+        body p {
+            font-size: 10pt;
+            text-align: center;
+        }
+
+    header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        header img {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+        form input {
+            height: 40px;
+            background: rgba(127, 127, 127, 0.75);
+            border-radius: 25px;
+            border: 0px;
+            margin-bottom: 15px;
+            padding: 0px;
+        }
+        form label {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        form input::placeholder {
+            font-size: 13px;
+            color: white;
+            padding-left: 20px;
+        }
+
+        form input[type="submit"]{
+            box-sizing: border-box;
+            
+            font-size: 14px;
+            color: white;
+            margin-top: 10px;
+            
+            background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 25px; 
+        }
+
+        #firstSubmit {
+            width: 100px;
+            align-self: center;
+        }
+
+        /* It's not working */
+        #secondSubmit {
+            width: fit-content;
+        }
+
+    @media screen and (max-width: 480px) {
+        
+        header {
+            width: 80%px;
+            font-size: 12pt;
+        }
+
+        header img {
+            height: 50px;
+        }
+        form {
+            width: 300px;
+        }
+    }
